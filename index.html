@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png"  href="./images/g (1).png">
+  <link rel="stylesheet" href="/scss/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <title> Gurukulam</title>
+
+</head>
+<body>
+  <section id="header" class="header-section">
+
+    <div class="content">
+
+      <header>
+        <a href="#" class="logo">
+          <img src="/images/Screenshot__12_-removebg-preview.png" style="height: 125px;position:absolute;left: 104px;bottom: 82%;width: 200px;" alt="Loopstudios landing page">
+        </a>
+        <nav class="navigation">
+          <a href="#" class="close">
+            <img src="/images/icon-close.svg" aria-label="Close" alt="Close icon">
+          </a>
+          
+          <a href="#" class="logo_nav"><img src="/images/Screenshot__12_-removebg-preview.png" alt="Loopstudios landing page"></a>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#tree">Products</a>
+          <a href="#">Support</a>
+        </nav>
+        <span class="burger">
+          <img src="/images/icon-hamburger.svg" alt="">
+        </span>
+      </header>
+  
+      <h1>Immersive experiences that deliver</h1>
+      <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_hzfmxrr7.json" background="transparent" speed="1" style="width: 267px;height: 500px;position: absolute;right: 77px;bottom: -1%;" loop="" autoplay=""></lottie-player>
+    </div>
+  </section>
+    
+  <section class="interactive content">
+    <div class="interactive__img">
+      <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_x9c4hmtd.json" background="transparent" speed="1" style="width: 394px;height: 321px;position: inherit;right: 1px;bottom: 50%;" loop="" autoplay=""></lottie-player>
+       
+    </div>
+    <div class="interactive__text">
+      <h2>The leader in LMS </h2>
+      <p>Founded in 2021, Loopstudios has been producing world-class virtual reality 
+        projects for some of the best companies around the globe. Our award-winning 
+        creations have transformed businesses through digital experiences that bind 
+        to their brand.</p>
+    </div>
+  </section>
+  
+  <section class="creations content">
+    <div class="creations__title" id="tree">
+      <h3>Our creations</h3>
+      <button type="button" class="btn">See all</button>
+    </div>
+    <ul class="creations__content">
+      <li style="background: url('/images/desktop/Instagram\ Story\ 1080x1920\ px\ \(1\).jpeg');">
+        <a href="/smash-template-opl/portal.html"target="_blank">Portal</a>
+      </li>
+      <li style="background: url('/images/desktop/Instagram\ Story\ 1080x1920\ px\ \(2\).jpeg');">
+        <a href="/smash-template-opl/oot.html"target="_blank">Online Objective Test</a>
+      </li>
+      <li style="background: url('/images/desktop/Instagram\ Story\ 1080x1920\ px\ \(1\).jpeg');">
+        <a href="/smash-template-opl/attendance.html"target="_blank">Attendance System</a>
+      </li>
+      <li style="background: url('/images/desktop/Instagram\ Story\ 1080x1920\ px\ \(2\).jpeg');">
+        <a href="/smash-template-opl/obb.html"target="_blank">Outcome Based Analysis</a>
+      </li>
+      <li style="background: url('/images/desktop/Instagram\ Story\ 1080x1920\ px\ \(1\).jpeg');">
+        <a href="/smash-template-opl/timetable.html"target="_blank">Time Table Generator</a>
+      </li>
+      <li style="background: url('/images/desktop/Instagram\ Story\ 1080x1920\ px\ \(2\).jpeg');">
+        <a href="/smash-template-opl/leave.html"target="_blank">Leave Management System</a>
+      </li>
+      <!-- <li style="background: url('/images/desktop/Instagram\ Story\ 1080x1920\ px\ \(1\).jpeg');">
+        <a href="#">The curiosity</a>
+      </li>
+      <li style="background: url('/images/desktop/Instagram\ Story\ 1080x1920\ px\ \(2\).jpeg');">
+        <a href="#">Make it fisheye</a>
+      </li> -->
+    </ul>
+  </section>
+  
+  <footer>
+    <div class="content">
+      <div class="navigation_bottom">
+        <a href="#" class="logo">
+          <img src="/images/Screenshot__12_-removebg-preview.png" aria-label="Loopstudios" alt="Loopstudios landing page">
+        </a>
+        <nav class="navigation">
+          <a href="#" aria-label="About">About</a>
+          <a href="#" aria-label="Careers">Careers</a>
+          <a href="#tree" aria-label="Products">Products</a>
+          <a href="#" aria-label="Support">Support</a>
+        </nav>
+      </div>
+      <div class="social">
+        <nav class="navigation">
+          <a href="#"><img src="/images/icon-facebook.svg" alt="facebook"></a>
+          <a href="#"><img src="/images/icon-twitter.svg" alt="twitter"></a>
+          <a href="#"><img src="/images/icon-pinterest.svg" alt="pinterest"></a>
+          <a href="https://www.instagram.com/gurukulam_lms/"><img src="/images/icon-instagram.svg" alt="instagram"></a>
+        </nav>
+        <div class="copyright">© 2021 Gurukulam. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+    
+  <script>
+                        // var animation = bodymovin.loadAnimation({
+                        //     container: document.getElementById('header-section'),
+                        //     renderer: 'svg',
+                        //     loop: false,
+                        //     autoplay: true,
+                        //     path: "/media/teaching.json"
+                        // })
+    document.querySelector('.burger').addEventListener('click', () => {
+      document.querySelector('.header-section .navigation').classList.add('active');
+    });
+
+    document.querySelector('.close').addEventListener('click', () => {
+      document.querySelector('.header-section .navigation').classList.remove('active');
+    });
+  </script>
+</body>
+</html>
